@@ -2,6 +2,10 @@
 
 This is mean to be a small program to do some specific tasks related to S3 storage operations.
 
+Requirements:
+
+1. python 3.8.2
+
 This project is for a POC and intends to:
 
 - Will copy/move image files from one S3 bucket to another. One-off operation.
