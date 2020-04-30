@@ -1,19 +1,13 @@
 #!/usr/bin/env python
+from . import initialize_environment
+from s3poc.interfaces.authentication import auth_val
+import sys, traceback
 
-
-def initialize_environment():
-    # read from environment variables or key vault or similar.
-    # verifies params are passed properly.
-    print("Initializing environemnt")
-
-from s3poc.interfaces.authentication import authentication_validation
+def main():
+    sys.tracebacklimit = 0
+    initialize_environment.init()
+    auth_val.authentication() # i don't like this 
 
 
 if __name__ == '__main__':
-
-    initialize_environment()
-    authentication_validation.mysql_auth
-    authentication_validation.s3_auth
-
-
-
+    main()
