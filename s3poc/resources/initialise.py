@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 from PIL import Image, ImageDraw
+from s3poc.interfaces.database import mysql
 import os 
 
 def generate_images():
@@ -11,6 +12,9 @@ def generate_images():
         count += 1
     print("%d images created"%(count))
 
-def generate_database_table():
+def load_legacy_s3_bucket():
+    count = 0
+
+def load_production_s3_bucket():
     count = 0
 

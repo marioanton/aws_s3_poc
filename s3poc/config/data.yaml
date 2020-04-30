@@ -1,7 +1,7 @@
 mysql:
     host: localhost
     user: root
-    passwd: sketch
+    passwd: EcuSOLarew+OgEs)EbEJ*@RfAB
     db: sketch
 production-s3:
     host: 127.0.0.1
