@@ -5,6 +5,7 @@ This is mean to be a small program to do some specific tasks related to S3 stora
 Requirements:
 
 1. python 3.8.2. I started using [pyenv](https://github.com/pyenv/pyenv) to avoid issues with versioning.
+2. boto3 library (pip install -r requirements.txt)
 
 This project is for a POC and intends to:
 
