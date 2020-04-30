@@ -3,13 +3,15 @@ mysql:
     user: root
     passwd: sketch
     db: sketch
-s3_source:
+production-s3:
     host: 127.0.0.1
     key: minioadmin
     pass: minioadmin
     port: 9000
-s3_destination:
+    bucket_name: image
+legacy-s3:
     host: 127.0.0.1
     key: minioadmin
     pass: minioadmin
     port: 9000
+    bucket_name: image

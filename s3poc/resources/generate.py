@@ -10,3 +10,7 @@ def generate_images():
         img.save('%s/images/pil_red%d.png'%(dir_path,count))
         count += 1
     print("%d images created"%(count))
+
+def generate_database_table():
+    count = 0
+

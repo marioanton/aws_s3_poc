@@ -7,7 +7,7 @@ from . import initialize_environment
 def main():
     sys.tracebacklimit = 0
     initialize_environment.init()
-    auth_val.authentication() # i don't like this 
+    auth_val.authentication() # i don't like this.
 
     generate.generate_images() # insert logic not to create images.
 
