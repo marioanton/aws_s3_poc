@@ -10,7 +10,7 @@ def s3_auth_and_access():
 
     minioClient = Minio('127.0.0.1:9000',
        access_key='minioadmin',    # Credentials to be exported to config file
-       secret_key='minioassdmin',  # Credentials to be exported to config file
+       secret_key='minioadmin',  # Credentials to be exported to config file
        secure=False)
 
     # Make a list bucket with the list_buckets API call.

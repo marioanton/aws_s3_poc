@@ -7,7 +7,7 @@ Requirements:
 1. python 3.8.2. I started using [pyenv](https://github.com/pyenv/pyenv) to avoid issues with versioning.
 2. minio library (pip install -r requirements.txt)
 3. docker container for minio s3 emulationgit a
-4. imagemagick for image generation
+4. pillow python module for images generation
 
 This project is for a POC and intends to:
 
