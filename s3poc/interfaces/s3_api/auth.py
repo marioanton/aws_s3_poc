@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
 # Import MinIO library.
+
+# To migrate to BOTO
 from minio import Minio
 from minio.error import ResponseError
 import sys, traceback
@@ -18,6 +20,6 @@ def s3_auth_and_access():
         minioClient.list_buckets()  # no need to show existing buckets, just to verify the capabilities of auth and access.
     except ResponseError as err:
         raise
-        sys.exit()
+        sys.exit(1)
 
 

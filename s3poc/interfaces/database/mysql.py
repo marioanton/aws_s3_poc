@@ -32,9 +32,10 @@ def run_update_query(database,query):
     # try to connect to mysql
     try:
         cnx = mysql.connector.connect(host="localhost", user="root", passwd="password", db=database)
-        cursor = cnx.cursor(buffered=True)
+        cursor = cnx.cursor()
         cursor.execute("%s"%(query))   # Syntax error in query
         cursor.close()
+        cnx.commit()
         cnx.close()
     except mysql.connector.Error as err:
         print("Something went wrong: {}".format(err))
