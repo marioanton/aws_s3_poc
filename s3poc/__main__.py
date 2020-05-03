@@ -50,11 +50,11 @@ def main(argv):
                 legacy_key = row[0]
                 production_key = row[0].replace(old_key_path, new_key_path)
                 status = test.test_object("%s/%s" % (endpoint_url, legacy_key))
-                if status == 403:
+                if status == 200:
                     print("Renaming key for object %s" %production_key)
                     get_set_update.s3_object_rename(client, dst_bucket, legacy_key, production_key)
                 status = test.test_object("%s/%s" % (endpoint_url, production_key))
-                if status == 403:
+                if status == 200:
                     print("Updating DB for object %s" %production_key)
                     mysql.run_update_query("sketch", "update image_path set name = REPLACE(name,'legacy','production') where name = '%s'"  %(legacy_key)) 
             result = mysql.run_query("sketch", "SELECT name from image_path where name like '%{0}/image%' limit 100" .format(old_key_path))
