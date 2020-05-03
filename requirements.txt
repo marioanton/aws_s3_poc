@@ -1,3 +1,4 @@
 minio
 configparser
 mysql-connector-python
+python-consul

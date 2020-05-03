@@ -5,9 +5,12 @@ This is mean to be a small program to do some specific tasks related to S3 stora
 Requirements:
 
 1. python 3.8.2. I started using [pyenv](https://github.com/pyenv/pyenv) to avoid issues with versioning.
-2. minio library (pip install -r requirements.txt)
+2. minio library (pip install -r requirements.txt) or boto
 3. docker container for minio s3 emulation. [minio](https://github.com/minio/minio)
 4. pillow python module for images generation
+
+Assumptions:
+1. Both S3 in the same region, would use s3 vpc endpoints to reach internally and reduce bandwith issues and speed up the transfer.
 
 This project is for a POC and intends to:
 
@@ -21,3 +24,12 @@ This project is for a POC and intends to:
 Assumptions:
 
 - New image files are written to destination S3 bucket. No new image files are uploaded to the source S3 bucket.
+
+
+
+How this should work.
+
+- Initial sync.
+- Rename object within bucket based on data in mysql
+- Verify 
+- Update mysql 
