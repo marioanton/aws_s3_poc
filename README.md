@@ -1,5 +1,11 @@
 # sk - aws_s3_poc
 
+
+This program is incomplete imho.
+Works but it doesn't fit the proper design requirements and perhaps depending on the scenario, functionality.
+Can't say i'm proud of it but works on Minio + Mysql + Boto
+There are many functions i have added to populate data for testing purposes that are not required to be used.
+
 This is mean to be a small program to do some specific tasks related to S3 storage operations.
 
 Requirements:
